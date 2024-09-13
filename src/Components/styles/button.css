@@ -1,62 +1,69 @@
 
 
-
-
 /* CSS */
 .Button-main-component-class {
-  align-items: center;
-  background-color: var(--tertiary);
-  border: 1px solid var(--secondary);
-  border-radius: 35px;
-  box-sizing: border-box;
-  color: var(--light);
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
   cursor: pointer;
-  display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
   position: relative;
-  text-align: center;
-  text-decoration: none;
+  z-index: 0;
+  border-radius: 50px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.Button-main-component-class:after {
-  background-color: var(--secondary);
-  border-radius: 50px;
+.Button-main-component-class:before {
   content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
+  left: -2px;
+  background-size: 400%;
   z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-Button-main-component-class 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
 }
 
-.Button-main-component-class:hover:after {
-  transform: translate(0, 0);
-}
-
-.Button-main-component-class:active {
-  background-color: var(--tertiary);
-  outline: 0;
-}
-
-.Button-main-component-class:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .Button-main-component-class {
-    padding: 0 40px;
+@keyframes glowing-Button-main-component-class {
+  0% {
+    background-position: 0 0;
   }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Button-main-component-class:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
 }
