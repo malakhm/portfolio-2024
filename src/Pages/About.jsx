@@ -5,7 +5,7 @@ import about from '../Assets/about.svg'
 
 const About = () => {
   return (
-    <div style={{ minHeight: "100vh" }} className="About-main-component-class ">
+    <div style={{ minHeight: "100vh" }} className="About-main-component-class " id="About">
       <div className="content">
         <SectionTitle>About</SectionTitle>
 
