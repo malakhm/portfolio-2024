@@ -1,0 +1,62 @@
+
+
+
+
+/* CSS */
+.Button-main-component-class {
+  align-items: center;
+  background-color: var(--tertiary);
+  border: 1px solid var(--secondary);
+  border-radius: 35px;
+  box-sizing: border-box;
+  color: var(--light);
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.Button-main-component-class:after {
+  background-color: var(--secondary);
+  border-radius: 50px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.Button-main-component-class:hover:after {
+  transform: translate(0, 0);
+}
+
+.Button-main-component-class:active {
+  background-color: var(--tertiary);
+  outline: 0;
+}
+
+.Button-main-component-class:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .Button-main-component-class {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Jost-Regular';
+  src: url('./Assets/Jost/static/Jost-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Jost-Bold';
+  src: url('./Assets/Jost/static/Jost-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('./Assets/Urbanist/static/Urbanist-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Urbanist-Italic';
+  src: url('./Assets/Urbanist/static/Urbanist-Italic.ttf');
+}
+:root {
+  --primary: #0e0e0e;
+  --secondary: #28e98c;
+  --tertiary: #171718;
+  --light: #f4f4f4;
+  --jost-regular: 'Jost-Regular';
+  --jost-bold: 'Jost-Bold';
+  --urbanist: 'Urbanist';
+  --urbanist-italic: 'Urbanist-Italic';
+  background-color: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  /* border: 1px solid var(--secondary); */
+  min-height: 100svh;
+  background-color: transparent !important;
+  color: var(--light) !important;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  flex-wrap: wrap !important;
+
+}

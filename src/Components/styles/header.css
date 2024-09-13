@@ -1,0 +1,58 @@
+.Header-main-component-class {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: var(--Jost-Regular);
+}
+
+.Menu-list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Menu-main-component-class {
+  background-color: var(--tertiary);
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  border-bottom: 3px solid var(--secondary);
+  border-radius: 2px;
+}
+
+.Menu-list-items li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* mobile styling */
+
+.Menu-burger-main-component-class {
+    display: none !important;
+  }
+@media (max-width: 768px) {
+  .Menu-burger-main-component-class {
+    display: flex !important;
+    align-items: center;
+  }
+  .Menu-main-component-class,  .Header-main-component-class button{
+    display: none !important;
+  }
+}
+
+.Menu-burger-icon{
+    color: var(--light);
+    font-size: 25px;
+}
+
+#fade-menu, .css-1h4bzp1-MuiButtonBase-root-MuiMenuItem-root{
+    font-family: var(--Jost-Regular)  !important;
+}
