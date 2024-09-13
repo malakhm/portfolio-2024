@@ -3,3 +3,9 @@
     justify-content: space-between;
     align-items: center !important;
 }
+
+@media (max-width: 768px) {
+    .Services-content-class{
+        flex-direction: column;
+    }
+}
