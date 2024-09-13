@@ -1,0 +1,10 @@
+.Title-Underlined-main span{
+    font-family: var(--jostbold) !important;
+    font-size: 45px;
+}
+
+@media (max-width: 768px) {
+    .Title-Underlined-main span{
+        font-size: 32px;
+    }
+}
