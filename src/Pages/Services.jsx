@@ -13,7 +13,7 @@ const Services = () => {
       id="Services"
     >
       <SectionTitle>Services</SectionTitle>
-      <div className="Services-content-class d-flex">
+      <div className="Services-content-class d-flex ">
         <div className="Services-content-item-class">
           <h2>UI/UX Design</h2>
           <video

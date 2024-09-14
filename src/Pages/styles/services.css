@@ -2,10 +2,22 @@
     display:flex;
     justify-content: space-between;
     align-items: center !important;
+    gap:10%;
+    background-image: url("../../Assets/eclipse.svg");
+    object-fit: cover;
 }
+
 
 @media (max-width: 768px) {
     .Services-content-class{
         flex-direction: column;
+        gap:1px !important;
+
+    }
+    .Services-main-component-class{
+        flex-direction: column;
+    }
+    .Services-content-item-class{
+        margin-top: 50px !important;
     }
 }

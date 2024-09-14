@@ -30,6 +30,8 @@
 
 
 .paragraph-text-span {
+  display: flex;
+
   width: 500px !important;
 }
 
@@ -72,8 +74,9 @@
     margin-top: 50px;
   }
   .paragraph-text-span {
-    width: 100% !important;
-    text-align: center;
+    display: flex;
+    max-width: 350px !important;
+    text-align: justify;
   }
 
   .img-about{
