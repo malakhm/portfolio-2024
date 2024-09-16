@@ -7,6 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { CiMenuBurger } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -58,7 +59,7 @@ const Header = () => {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Home</MenuItem>
+        <Link><MenuItem onClick={handleClose}>Home</MenuItem></Link>
         <MenuItem onClick={handleClose}>About</MenuItem>
         <MenuItem onClick={handleClose}>Services</MenuItem>
         <MenuItem onClick={handleClose}>Portfolio</MenuItem>
