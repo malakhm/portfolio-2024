@@ -71,3 +71,6 @@ body {
   scrollbar-color: #888 var(--primary); /* Color of the scrollbar thumb and track */
 }
 
+p{
+  font-family: var(--urbanist);
+}

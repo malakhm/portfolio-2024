@@ -1,9 +1,15 @@
 import React from "react";
-import { FaBookOpen, FaCartShopping, FaCreditCard, FaNetworkWired } from "react-icons/fa6";
+import {
+  FaBookOpen,
+  FaCartShopping,
+  FaCreditCard,
+  FaNetworkWired,
+  FaUser
+} from "react-icons/fa6";
 import "./styles/project.css";
 import { Link } from "react-router-dom";
-
-const SingleProject = ({ nameProject, link, desc, img, category }) => {
+import { LuBrainCircuit } from "react-icons/lu";
+const SingleProject = ({ nameProject, link, desc, img, category, stack }) => {
   return (
     <div className="single-project-main-component-class">
       <Link to={link}>
@@ -26,10 +32,21 @@ const SingleProject = ({ nameProject, link, desc, img, category }) => {
             <FaCreditCard className="project-icon" />
           ) : category === "Informative" ? (
             <FaBookOpen className="project-icon" />
+          ) : category === "AI" ? (
+            <LuBrainCircuit className="project-icon" />
+          ): category === "Personal" ? (
+            <FaUser className="project-icon" />
           ) : null}
         </div>
-        <h5>{nameProject}</h5>
-        <p style={{ fontSize: "14px" }}>{desc}</p>
+        <div className="d-flex flex-column align-items-start justify-content-between  " >
+          <div className="d-flex flex-column ">
+            <span className="name-project-main">{nameProject}</span>
+            <p style={{ fontSize: "14px" }}>{desc}</p>
+          </div>
+          <span>
+            Tech Stack: <span className="Stack-project-main">{stack}</span>
+          </span>
+        </div>
       </div>
     </div>
   );

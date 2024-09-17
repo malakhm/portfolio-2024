@@ -5,6 +5,7 @@
     border-radius: 10px;
     background-color: var(--tertiary);
     width: 300px;
+    min-height: 400px;
 }
 .info-class{
     display: flex;
@@ -19,4 +20,12 @@
     font-weight: bold;
     font-size: 12px;
     margin-bottom: 5px;
+}
+.name-project-main{
+    font-family: var(--jostbold);
+}
+
+.Stack-project-main {
+    color: var(--secondary);
+
 }
