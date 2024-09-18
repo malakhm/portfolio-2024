@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
+import Steps from "./Pages/Steps";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <About/>
       <Services/>
     <Projects/>
-
+<Steps/>
     </div>
     </BrowserRouter>
 

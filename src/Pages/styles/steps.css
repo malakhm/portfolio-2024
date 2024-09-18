@@ -1,0 +1,16 @@
+.Main-Steps-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-desc-steps{
+    width: 200px !important;
+}
+
+@media (max-width: 768px) {
+    .Main-Steps-class{
+        flex-direction: column;
+    }
+}
