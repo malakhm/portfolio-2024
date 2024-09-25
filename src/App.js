@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
 import Steps from "./Pages/Steps";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services/>
     <Projects/>
 <Steps/>
+<Contact/>
     </div>
     </BrowserRouter>
 
