@@ -24,7 +24,7 @@ const Header = () => {
   };
   const handleSetActiveMobile = (section) => {
     setActive(section);
-    handleClose(); 
+    handleClose();
   };
 
   return (
@@ -54,7 +54,13 @@ const Header = () => {
         </ul>
       </div>
 
-      <Buttonn className="Button-hire-me">Hire me</Buttonn>
+      <a
+        href="https://www.linkedin.com/in/malak-hamawi/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Buttonn className="Button-hire-me">Hire me</Buttonn>
+      </a>
 
       <div className="Menu-burger-main-component-class">
         <CiMenuBurger
@@ -77,19 +83,44 @@ const Header = () => {
           TransitionComponent={Fade}
         >
           <a href="#home">
-            <MenuItem  className={active === "home" ? "active" : ""} onClick={handleSetActiveMobile}>Home</MenuItem>
+            <MenuItem
+              className={active === "home" ? "active" : ""}
+              onClick={handleSetActiveMobile}
+            >
+              Home
+            </MenuItem>
           </a>
           <a href="#about">
-            <MenuItem  className={active === "about" ? "active" : ""} onClick={handleSetActiveMobile}>About</MenuItem>
+            <MenuItem
+              className={active === "about" ? "active" : ""}
+              onClick={handleSetActiveMobile}
+            >
+              About
+            </MenuItem>
           </a>
           <a href="#services">
-            <MenuItem  className={active === "services" ? "active" : ""}  onClick={handleSetActiveMobile}>Services</MenuItem>
+            <MenuItem
+              className={active === "services" ? "active" : ""}
+              onClick={handleSetActiveMobile}
+            >
+              Services
+            </MenuItem>
           </a>
           <a href="#projects">
-            <MenuItem  className={active === "projects" ? "active" : ""} onClick={handleSetActiveMobile}>Projects</MenuItem>
+            <MenuItem
+              className={active === "projects" ? "active" : ""}
+              onClick={handleSetActiveMobile}
+            >
+              Projects
+            </MenuItem>
           </a>
           <a href="#contact">
-            <MenuItem  className={active === "contact" ? "active" : ""} onClick={handleSetActiveMobile}>Contact</MenuItem>
+            <MenuItem
+              className={active === "contact" ? "active" : ""}
+              onClick={handleSetActiveMobile}
+            >
+              Contact
+            </MenuItem>
           </a>
         </Menu>
       </div>
