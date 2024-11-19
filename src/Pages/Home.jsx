@@ -6,7 +6,7 @@ import design from "../Assets/design.svg";
 
 const Home = () => {
   return (
-    <div className="Home-main-component-class" id="Home">
+    <div className="Home-main-component-class" id="home">
       <div className="Title-position-main ">
         <div className="Title-position-main-container">
         <span className="name-class">Hi I'm Malak Hamwi</span>

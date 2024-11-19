@@ -9,7 +9,7 @@ import SimpleSlider from "../Components/Slider";
 const Services = () => {
  
   return (
-    <div  style={{overflow:"hidden", minHeight:"100svh"}}>
+    <div  style={{overflow:"hidden", minHeight:"100svh"}} id="services">
       <div
         style={{ minHeight: "80svh" }}
         className="Services-main-component-class mt-5 d-flex  align-items-center"

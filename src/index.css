@@ -27,20 +27,25 @@
   --urbanist: 'Urbanist';
   --urbanist-italic: 'Urbanist-Italic';
   background-color: #0e0e0e;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
 }
-body {
+body , .body{
   /* border: 1px solid var(--secondary); */
   min-height: 100svh;
   background-color: transparent !important;
   color: var(--light) !important;
-  display: flex;
+  display: flex  !important;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   flex-wrap: wrap !important;
-  /* overflow-x: hidden !important; */
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: center !important;
+  align-content: center !important;
+  align-self: center !important;
+  overflow-x: hidden !important;
 
 }
 
@@ -73,4 +78,21 @@ body {
 
 p{
   font-family: var(--urbanist);
+}
+
+a {
+  text-decoration: none !important; /* Remove underline */
+  color: inherit !important; /* Inherit color from parent */
+  background: none !important; /* Remove background */
+  border: none !important; /* Remove border */
+  padding: 0 !important; /* Remove padding */
+  margin: 0 !important; /* Remove margin */
+  font: inherit !important; /* Inherit font properties */
+  cursor: pointer !important; /* Set cursor to pointer */
+}
+
+.App {
+  width: 95% !important;
+  /* border: 2px solid white; */
+  align-self: center;
 }

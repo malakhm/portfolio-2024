@@ -6,23 +6,25 @@ import Projects from "./Pages/Projects";
 import Services from "./Pages/Services";
 import Steps from "./Pages/Steps";
 import Contact from "./Pages/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App" >
+      <div className="body">
+        <div className="App">
+          <Header />
 
-        <Header/>
-
-      <Home/>
-      <About/>
-      <Services/>
-    <Projects/>
-<Steps/>
-<Contact/>
-    </div>
+          <Home />
+          <About />
+          <Services />
+          <Projects />
+          <Steps />
+          <Contact />
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
-
   );
 }
 
